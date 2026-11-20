@@ -1,4 +1,14 @@
 package ir.maktabsharif.dto.Rider;
 
-public class RiderResponseDto {
+import lombok.Builder;
+
+@Builder
+public record RiderResponseDto(
+        Long id,
+        String username,
+        String fullName,
+        String phoneNumber,
+        String homeAddress
+) {
+
 }

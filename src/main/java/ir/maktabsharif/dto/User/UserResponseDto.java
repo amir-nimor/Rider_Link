@@ -1,4 +1,9 @@
 package ir.maktabsharif.dto.User;
 
-public class UserResponseDto {
+public record UserResponseDto (
+        Long id,
+        String username,
+        String fullName,
+         String phoneNumber
+){
 }
